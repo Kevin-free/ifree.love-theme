@@ -1,0 +1,40 @@
+/*=====================================================
+    Fonts`
+=====================================================*/
+$accent-color: #0065F2;
+
+$theme-light: (
+    bg-color: #FFFFFF,
+    text-title: #161616,
+    text-body: #313131,
+    text-light: #929399,
+);
+
+$theme-dark: (
+    bg-color: #180F46,
+    text-title: #FFFFFF,
+    text-body: #D5D5D5,
+    text-light: #929399,
+);
+
+/*=====================================================
+    Fonts
+=====================================================*/
+$font-body: 'Noto Sans', sans-serif;
+$font-title: 'Playfair Display', serif;
+$font-slogan: 'Apple Chancery', cursive;
+
+/*=====================================================
+    Please don't edit below code if you are not sure
+=====================================================*/
+:root { 
+    @each $name, $value in $theme-dark {
+        --#{$name}: #{$value};
+    }
+}
+
+[data-theme="light"] {
+    @each $name, $value in $theme-light {
+        --#{$name}: #{$value};
+    }
+}
